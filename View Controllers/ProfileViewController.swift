@@ -77,6 +77,10 @@ private extension ProfileViewController {
             title: NSLocalizedString("share", comment: ""),
             image: UIImage(systemName: "square.and.arrow.up")) { _ in
             accountViewModel.share()
+        }, UIAction(
+            title: NSLocalizedString("open-in-browser", comment: ""),
+            image: UIImage(systemName: "safari")) { _ in
+                accountViewModel.openInBrowser()
         }]
 
         if relationship.following {

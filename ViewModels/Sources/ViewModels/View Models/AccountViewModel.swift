@@ -132,6 +132,12 @@ public extension AccountViewModel {
         eventsSubject.send(Just(.share(url)).setFailureType(to: Error.self).eraseToAnyPublisher())
     }
 
+    func openInBrowser() {
+        guard let url = URL(string: accountService.account.url) else { return }
+
+        eventsSubject.send(Just(.navigation(.url(url))).setFailureType(to: Error.self).eraseToAnyPublisher())
+    }
+
     func confirmHideReblogs() {
         eventsSubject.send(Just(.confirmHideReblogs(self)).setFailureType(to: Error.self).eraseToAnyPublisher())
     }

@@ -278,6 +278,7 @@
 "notifications.poll-ended" = "A poll you have voted in has ended";
 "notifications.your-poll-ended" = "Your poll has ended";
 "notifications.unknown-%@" = "Notification from %@";
+"open-in-browser" = "Open in browser";
 "remove" = "Remove";
 "report" = "Report";
 "report.additional-comments" = "Additional comments";
